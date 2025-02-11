@@ -1,0 +1,194 @@
+.mainDiv {
+    padding-inline: 2rem;
+    
+    box-sizing: border-box; 
+}
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tituloInicio {
+    color: #5c5c5c;
+    font-weight: bolder;
+    margin: 0;
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Poppins';
+} 
+
+
+.subtituloInicio {
+    font-family: 'Novecento';
+
+    color: #fc741c;
+    font-size: 1.51rem;
+    text-align:center;
+}
+
+
+.descricaoInicio{
+    margin: 0;
+    font-size: 1.1rem;
+    color: black;
+    text-align:center;
+    font-weight: bold;
+    font-family: 'Poppins';
+    text-align: start;
+}
+
+.imgEquipamentos {
+    width: 100%;      
+    max-width: 400px;  
+    height: auto;     
+    margin: 0 auto;  
+}
+
+.retangulos-eletronicos{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: (auto-fit, minmax(150px, 1fr));
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: center;
+    font-family: 'Novecento';
+}
+
+.retangulo{
+    background-color: #747474;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    width: auto;
+    height: auto;
+    padding: 0.4rem;
+    box-sizing: border-box;
+    box-shadow: -0.3rem -0.15rem 0 0.1px #fc741c ;
+}
+
+.divWhatsInicio{
+    padding-top: 1rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.botaoWhatsInicio{
+    border: none;
+    border-radius: 3rem;
+    color: white;
+    background-color: #25d366;
+    font-weight: bold;
+    padding-inline: 1rem;
+    font-size: 0.9rem;
+    width: 80%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.iconWhatsappInicio{
+    height: 2rem;
+    width: 2rem;
+    padding-right: 1.5rem;
+}
+
+.marcasPcsNotebooks{
+    width: 18rem;
+}
+
+/* tabret */
+@media (min-width: 768px) {
+.mainDiv {
+    padding-inline: 4rem;  
+}
+
+
+
+.subtituloInicio {
+    font-size: 1.2rem;
+    align-self: flex-end;
+}
+
+.imgEquipamentos {
+    max-width: 300px;  
+}
+
+.retangulos-eletronicos{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+}
+
+/* pc */
+@media (min-width: 1200px) {
+.mainDiv {
+    padding-inline: 4rem;
+    padding: 4rem;
+    padding-left: 8rem;
+    
+    justify-content: left;
+}
+
+.divWhatsInicio{
+    width: 100%;
+}
+.botaoWhatsInicio{
+    width: 100%;
+    
+}
+.colunaInicio{
+    flex: 1;
+}
+.retangulos-eletronicos{
+    grid-template-columns: repeat(2,1fr);
+}
+.imgEquipamentos {
+    max-width: 600px;  
+    flex: 1;
+}
+
+.retangulo{
+    font-size: larger;
+}
+
+.tituloInicio {
+    font-size: 1.8rem; 
+    
+    text-align: start;
+}
+
+.subtituloInicio {
+    font-size: 1.5rem;
+    display: flex;
+    text-align: start;
+}
+
+
+.retangulos-eletronicos{
+    gap: 2rem;
+    
+}
+
+#inicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem; /* Dá mais espaço entre o texto e a imagem */
+}
+
+.marcasPcsNotebooks{
+    justify-content: center;
+    width: auto;
+}
+}

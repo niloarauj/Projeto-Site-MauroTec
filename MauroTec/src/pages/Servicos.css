@@ -1,0 +1,158 @@
+/* Estilos base (Mobile First) */
+.Servicos {
+    padding: 16px;
+    font-family: 'Novecento';
+  }
+  
+  .secao-categoria {
+    margin-bottom: 24px;
+    
+  }
+  
+  .secao-categoria h2 {
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 12px;
+    
+    padding-bottom: 8px;
+  }
+
+  .retangulo-categoria{
+    background-color: #747474;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    width: 100%;
+    height: auto;
+    
+    box-sizing: border-box;
+    box-shadow: -0.3rem -0.15rem 0 0.1px #fc741c ;
+}
+  .grid-container {
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: (auto-fit, minmax(150px, 1fr)); /* 1 coluna em telas pequenas */
+    gap: 12px; /* Espaçamento entre os itens */
+    
+  }
+  
+
+
+
+
+  .imagem { 
+    width: 100%;
+    max-width: 400px; /* Evita que fique muito grande */
+    height: auto;
+    object-fit: cover;
+    padding: 0.2rem;
+    border-radius: 0.4rem;
+  }
+  
+  .grid-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+    justify-content:space-between;
+    
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+
+  h1{
+    color: #fc741c;
+    justify-content:center;
+    display: flex;
+    text-align:center;
+  }
+
+  
+  
+  .grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grid-item h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+    
+  }
+  
+  .grid-item p {
+    margin: 8px 0 0;
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  .retangulos1{
+   
+    display: flex;
+    
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+  /* Configurações para tablets (min-width: 768px) */
+  @media (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 2 colunas ou mais */
+      gap: 16px;
+    }
+  
+
+    .secao-categoria h2 {
+      font-size: 1.5rem; /* Título maior */
+    }
+  
+    .grid-item h3 {
+      font-size: 1.2rem; /* Título do item maior */
+    }
+  
+    .grid-item p {
+      font-size: 0.9rem; /* Descrição maior */
+    }
+  }
+  
+  /* Configurações para desktops (min-width: 1200px) */
+  @media (min-width: 1200px) {
+    .grid-container {
+      grid-template-columns: repeat(2,1fr); /* 3 colunas ou mais */
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .retangulo-categoria{
+      width: 44%;
+    }
+    .secao-categoria h2 {
+      font-size: 1.8rem; /* Título ainda maior */
+    }
+  
+    .grid-item h3 {
+      font-size: 1.4rem; /* Título do item ainda maior */
+    }
+    .fundo{
+      background-color: #f2f2f2;
+      padding: 2rem;
+      border-radius: 2rem;
+  
+    }
+    h1{
+      font-size: 2.5rem;
+    }
+
+    .grid-item p {
+      font-size: 1rem; /* Descrição ainda maior */
+    }
+
+    .grid-item{
+      justify-content: space-between;
+      justify-items:center;
+    }
+  }
