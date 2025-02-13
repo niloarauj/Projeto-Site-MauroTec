@@ -1,0 +1,86 @@
+@font-face {
+    font-family: Poppins;
+    src: url('src/assets/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+}
+
+.quemSomos{
+    padding-inline: 2rem;
+    padding-bottom: 2rem;
+}
+
+.conteudoQuemSomos{
+    flex-direction: column;
+    display: flex;
+
+}
+
+.descricaoQuemSomos{
+    text-align: center;
+    display: flex;
+    font-size: 1.2rem; 
+}
+
+
+.imgMauroVitor{
+    max-width: 500px;
+    width: 50%;
+    height: auto;
+    display: flex;
+    border: 2px black solid;
+    order: 1;
+    align-self: center;
+
+}
+
+.textoQuemSomos{
+    font-family: Poppins;
+    order: 0;
+    
+
+}
+
+@media (min-width: 768px) {
+
+
+}
+
+
+@media (min-width: 1200px) {
+    .quemSomos{
+        padding-inline: 8rem;
+    }
+    .conteudoQuemSomos{
+        flex-direction: row;
+    }
+
+    .textoQuemSomos{
+        padding-left: 4rem;
+        font-size: 1.2rem;
+        text-align: justify;
+        order: 1;
+        
+        
+    }
+    .imgMauroVitor{
+        width: 60%;
+        height: auto;
+        display: flex;
+        border: 2px black solid;
+    
+    }
+    .descricaoQuemSomos{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-weight: 5rem;
+        
+    }
+
+
+
+}

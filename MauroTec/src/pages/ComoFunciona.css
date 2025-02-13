@@ -1,0 +1,35 @@
+
+
+.caminhao{
+    max-width: 100px;
+    width: 100%;
+}
+.coletaEntregaDiv{
+    flex-direction: row;
+    display: flex;
+}
+
+
+
+/* tabret */
+@media (min-width: 768px) {
+
+
+}
+
+
+/* pc */
+@media (min-width: 1200px) {
+
+
+    .caminhao{
+        max-width: 100px;
+        width: 100%;
+    }
+    .coletaEntregaDiv{
+        flex-direction: row;
+        display: flex;
+    }
+
+
+}

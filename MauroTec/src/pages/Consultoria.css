@@ -1,0 +1,65 @@
+
+.conteudoConsultoria{
+    flex-direction: column;
+    display: flex;
+    padding-inline: 2rem;
+}
+
+h1{
+    padding-inline: 2rem;
+}
+.subtituloConsultoria{
+    text-align: center;
+    font-size: 1.1rem;
+    padding-inline: 2rem;
+}
+
+.descricaoConsultoria{
+    font-family: 'Poppins';
+    font-size: 0.9rem;
+}
+
+
+.setupGamerConsultoria{
+    display: flex;
+    max-width: 500px;
+    width: 100%;
+    align-self: center;
+}
+
+/* tabret */
+@media (min-width: 768px) {
+
+
+}
+
+
+/* pc */
+@media (min-width: 1200px) {
+
+    .consultoriaMainDiv{
+        padding-bottom: 4rem;
+    }
+    .conteudoConsultoria{
+        flex-direction: row;
+        display: flex;
+        padding-inline: 4rem;
+    }
+    .setupGamerConsultoria{
+        display: flex;
+        height: auto;
+        max-width: 600px;
+        width: 100%;
+
+    }
+
+    .subtituloConsultoria{
+        font-size: 1.1rem;
+        padding-inline: 2rem;
+    }
+    
+    .descricaoConsultoria{
+        font-size: 0.9rem;
+    }
+
+}

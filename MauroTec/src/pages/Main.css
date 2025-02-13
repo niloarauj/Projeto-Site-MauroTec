@@ -37,7 +37,7 @@
     text-align:center;
     font-weight: bold;
     font-family: 'Poppins';
-    text-align: start;
+    text-align: center;
 }
 
 .imgEquipamentos {
@@ -48,11 +48,11 @@
 }
 
 .retangulos-eletronicos{
-    padding-top: 2rem;
-    display: grid;
+    padding-top: 1.5rem;
+    display: flex;
     grid-template-columns: (auto-fit, minmax(150px, 1fr));
     flex-wrap: wrap;
-    gap: 0.4rem;
+    gap: 1.5rem;
     justify-content: center;
     font-family: 'Novecento';
 }
@@ -61,10 +61,10 @@
     background-color: #747474;
     color: white;
     display: flex;
+    width: 45%;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    width: auto;
     height: auto;
     padding: 0.4rem;
     box-sizing: border-box;
@@ -72,7 +72,7 @@
 }
 
 .divWhatsInicio{
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -100,7 +100,7 @@
 .iconWhatsappInicio{
     height: 2rem;
     width: 2rem;
-    padding-right: 1.5rem;
+    padding-right: 0.7rem;
 }
 
 .marcasPcsNotebooks{
@@ -127,20 +127,31 @@
 .retangulos-eletronicos{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+
+
+
 }
 
 /* pc */
 @media (min-width: 1200px) {
+
 .mainDiv {
     padding-inline: 4rem;
     padding: 4rem;
     padding-left: 8rem;
-    
     justify-content: left;
+}
+#inicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
 .divWhatsInicio{
-    width: 100%;
+    width: 55%;
+
 }
 .botaoWhatsInicio{
     width: 100%;
@@ -149,17 +160,27 @@
 .colunaInicio{
     flex: 1;
 }
+
+
 .retangulos-eletronicos{
-    grid-template-columns: repeat(2,1fr);
-}
-.imgEquipamentos {
-    max-width: 600px;  
-    flex: 1;
+    display: flex;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    width: 57%;
+
 }
 
 .retangulo{
-    font-size: larger;
+    font-size: 1rem;
+
 }
+
+
+
+.imgEquipamentos {
+    max-width: 700px;  
+    flex: 1;
+}
+
 
 .tituloInicio {
     font-size: 1.8rem; 
@@ -168,27 +189,18 @@
 }
 
 .subtituloInicio {
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: flex;
     text-align: start;
 }
 
-
-.retangulos-eletronicos{
-    gap: 2rem;
-    
-}
-
-#inicio {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3rem; /* Dá mais espaço entre o texto e a imagem */
+.descricaoInicio{
+    font-size: 1.5rem;
+    text-align: start;
 }
 
 .marcasPcsNotebooks{
     justify-content: center;
-    width: auto;
+    width: 100%;
 }
 }

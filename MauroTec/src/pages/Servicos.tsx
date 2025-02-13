@@ -9,11 +9,6 @@ import reparosServicos from '../assets/images/imagensServicos/reparosServicos.jp
 import suprimentoImpressorasServicos from '../assets/images/imagensServicos/suprimentoImpressorasServicos.jpg'
 
 
-
-
-
-
-
 const servicoItens = {
     "Notebooks e Computadores": [
         {title: 'Montagem de PCs Gamer - Upgrade SSD - Upgrade Memória RAM', description: 'Performance', image:performanceServicos },

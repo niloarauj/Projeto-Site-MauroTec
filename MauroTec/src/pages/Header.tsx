@@ -16,7 +16,7 @@ return(
             </ul>
         </nav>
         <div className="whatsapp-container">
-            <a href="https://wa.link/jmlqf0">
+            <a href="https://wa.link/jmlqf0" target="_blank" rel="noopener noreferrer">
                 <button className="whatsapp-button"> <img src="src/assets/images/whatsapp-icon.svg" alt="WhatsApp" className="whatsapp-icon" />(85) 98662-5606 </button>
             </a>
             

@@ -91,12 +91,11 @@ a:hover{
     .header{
         display: fixed;
         border-bottom: 8px solid #fc6404;
+        padding: 1rem;
 
     }
     .logo {
         max-width: 80px;
-        padding-left: 4rem;
-
     }
 }
 

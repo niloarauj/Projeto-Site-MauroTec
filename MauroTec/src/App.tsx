@@ -4,8 +4,11 @@ import './App.css'
 
 import Header from './pages/Header.tsx'
 import Main from './pages/Main.tsx'
-import Footer from './pages/Footer.tsx'
 import Servicos from './pages/Servicos.tsx'
+import QuemSomos from './pages/QuemSomos.tsx'
+import Consultoria from './pages/Consultoria.tsx'
+import ComoFunciona from './pages/ComoFunciona.tsx'
+import Footer from './pages/Footer.tsx'
 
 function App() {
   return (
@@ -16,6 +19,11 @@ function App() {
 
       <Main/>
       <Servicos/>
+      <Consultoria/>
+      <ComoFunciona/>
+
+      <QuemSomos/>
+
       <Footer/>
 
 
