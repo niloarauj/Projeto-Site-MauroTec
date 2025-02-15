@@ -46,8 +46,11 @@ const Servicos: React.FC = () => {
                                 {items.map((item, index) => (
                                     <div key={index} className='grid-item'>
                                         <img src={item.image} alt="" className='imagem'/>
-                                        <h3>{item.description}</h3>
-                                        <p>{item.title}</p>
+                                        <div className="texto-grid-item">
+                                            <h3>{item.description}</h3>
+                                            <p>{item.title}</p>
+                                        </div>
+                                        
                                     </div>   
                                 ))}
                             </div>

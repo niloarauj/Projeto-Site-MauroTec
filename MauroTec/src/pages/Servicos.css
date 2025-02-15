@@ -9,6 +9,13 @@
     
   }
   
+  .texto-grid-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Garante que os textos fiquem na parte inferior */
+    width: 100%;
+  }
+
   .secao-categoria h2 {
     font-size: 1.3rem;
     color: white;
@@ -58,6 +65,8 @@
     padding: 12px;
     text-align: center;
     justify-content:space-between;
+    display: flex;
+    flex-direction: column;
     
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
@@ -143,6 +152,9 @@
       border-radius: 2rem;
   
     }
+
+
+
     h1{
       font-size: 2.5rem;
     }
