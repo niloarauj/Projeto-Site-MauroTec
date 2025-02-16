@@ -1,7 +1,6 @@
 import './Consultoria.css'
 
 function Consultoria(){
-
     return(
         <div className="consultoriaMainDiv">
             <h1>Consultoria para montagem de computador gamer</h1>

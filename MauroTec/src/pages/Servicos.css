@@ -4,6 +4,9 @@
     font-family: 'Novecento';
   }
   
+  h1{
+    padding-bottom: 1rem;
+  }
   .secao-categoria {
     margin-bottom: 24px;
     
@@ -56,6 +59,7 @@
     object-fit: cover;
     padding: 0.2rem;
     border-radius: 0.4rem;
+    justify-self: center;
   }
   
   .grid-item {
@@ -64,10 +68,10 @@
     border-radius: 8px;
     padding: 12px;
     text-align: center;
-    justify-content:space-between;
+    justify-content:center;
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
@@ -153,10 +157,19 @@
   
     }
 
-
+    .imagem {
+      width: 100%; /* Faz a imagem ocupar 100% do contêiner */
+      height: 200px; /* Define uma altura fixa para todas as imagens */
+      object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+      border-radius: 0.4rem;
+      justify-self: center;
+      padding: 1rem;
+      border-radius: 0.4rem;
+  }
 
     h1{
       font-size: 2.5rem;
+      padding: 2rem;
     }
 
     .grid-item p {

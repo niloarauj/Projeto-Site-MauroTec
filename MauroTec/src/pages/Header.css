@@ -28,14 +28,13 @@ a:hover{
 
 
 .logo {
-    background: transparent;
-    max-width: 8rem;
+    width: auto;
     height: auto;
+    max-width: 200px; /* Ajuste conforme necessário */
     object-fit: contain;
+    
     justify-content: center;
-    align-items: center;
 }
-
 .nav-buttons ul {
     list-style-type: none;
     padding-right: 2rem;
@@ -104,15 +103,19 @@ a:hover{
     .header{
         position: fixed;
         border-bottom: 8px solid #fc6404;
-        padding-top: 0;
+        
 
     }
 
     .logo {
-        max-width: 120px;
+        width: auto;
+        height: auto;
+        max-width: 150px; /* Ajuste conforme necessário */
+        object-fit: contain;
         padding-left: 4rem;
+        padding-top: 0.4rem;
     }
-
+    
     .nav-buttons {
         display: flex;
         flex-grow: 1;

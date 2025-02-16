@@ -28,7 +28,6 @@ const servicoItens = {
 
 const Servicos: React.FC = () => {
     return(
-        
             <div className="Servicos">
                 <section id='secao-servicos'>
                     <h1>TUDO O QUE VOCÊ PRECISA EM ASSISTÊNCIA EM INFORMÁTICA</h1>
@@ -39,7 +38,6 @@ const Servicos: React.FC = () => {
                                 <div className='retangulo-categoria'>
                                     <h2>{category}</h2>
                                 </div>
-                                
                             </div>
                             
                             <div className="grid-container">
@@ -50,7 +48,7 @@ const Servicos: React.FC = () => {
                                             <h3>{item.description}</h3>
                                             <p>{item.title}</p>
                                         </div>
-                                        
+                                        <img src="" alt="" />
                                     </div>   
                                 ))}
                             </div>
