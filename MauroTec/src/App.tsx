@@ -8,6 +8,8 @@ import Servicos from './pages/Servicos.tsx'
 import QuemSomos from './pages/QuemSomos.tsx'
 import Consultoria from './pages/Consultoria.tsx'
 import ComoFunciona from './pages/ComoFunciona.tsx'
+import Avaliacoes from './pages/Avaliacoes.tsx'
+
 import Footer from './pages/Footer.tsx'
 
 function App() {
@@ -22,7 +24,11 @@ function App() {
       <Consultoria/>
       <ComoFunciona/>
 
+      <Avaliacoes/>
+
       <QuemSomos/>
+
+
 
       <Footer/>
 

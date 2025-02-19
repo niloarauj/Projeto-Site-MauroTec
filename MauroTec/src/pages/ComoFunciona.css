@@ -1,35 +1,109 @@
-
-
-.caminhao{
-    max-width: 100px;
-    width: 100%;
-}
-.coletaEntregaDiv{
-    flex-direction: row;
-    display: flex;
+.comoFuncionaMainDiv {
+  padding-inline: 4rem;
 }
 
-
-
-/* tabret */
-@media (min-width: 768px) {
-
+.conteudoComoFunciona {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif; 
 
 }
 
+.coletaEntregaDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
-/* pc */
-@media (min-width: 1200px) {
+.caminhao {
+  max-width: 100px;
+  width: 100%;
+}
 
+.coletaEntrega {
+  margin: 0;
+  color: #fc6404;
+  font-weight: 600;
+}
 
-    .caminhao{
-        max-width: 100px;
-        width: 100%;
-    }
-    .coletaEntregaDiv{
-        flex-direction: row;
-        display: flex;
-    }
+.ganheFreteGratis {
+  margin: 0;
+  color: #666;
+}
 
+.passosContainer {
+  display: flex;
 
+  justify-content: space-between; 
+  gap: 1rem; 
+}
+
+.passo {
+  flex: 1;
+  text-align: center;
+  border-radius: 8px;
+
+}
+
+.numero {
+  font-size: 10vw;
+  font-weight: bold;
+  color: #e4e4e4;
+
+}
+
+.textoPasso{
+  color: #fc6404;
+}
+
+.servicosExpressComoFunciona{
+  display: flex;
+  flex-direction:  row;
+  align-items: flex-start;
+  padding-top: 2rem;
+}
+
+.centralExpress{
+  display: flex;
+  flex-direction: column;
+}
+
+.iconeExpress{
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+
+}
+.textoExpress, .descricaoTextoExpress, .diasUteisExpress, .excecaoExpress,
+.atencaoExpress, .tipoAceito{
+  font-size: 12px;
+  max-width: 100%; 
+  text-align: justify; 
+  line-height: 1.4;
+  margin: 2px;
+  
+}
+
+.diasUteisExpress, .textoExpress{
+  color: #fc6404;
+}
+.diasUteisExpress{
+  padding-top: 1rem;
+}
+
+.atencaoExpress{
+  padding-top: 1rem;
+}
+
+.tipoAceito{
+  text-align: center;
+  padding-top: 1rem;  
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+.passosContainer {
+  flex-direction: column;
+  align-items: center;
+}
 }

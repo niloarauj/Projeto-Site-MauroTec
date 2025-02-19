@@ -7,6 +7,34 @@
   src: url('src/assets/fonts/Novecento-WideBold.ttf') format('truetype');
 }
 
+.reviews-carousel {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.review-card {
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+.review-text {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.review-author {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+
+
+
 body, html {
   min-height: 100vh;
   height: 100%;
