@@ -132,75 +132,55 @@
       font-size: 0.9rem; /* Descrição maior */
     }
   }
-  
+
 /* Configurações para desktops (min-width: 1200px) */
-#secao-servicos {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.secao-categoria {
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-.categoria-especial {
-  flex-direction: row-reverse;
-}
-
-.fundo {
-  flex: 2;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.grid-item {
-  padding: 16px;
-}
-
 /* Configurações para desktops (min-width: 1200px) */
 @media (min-width: 1200px) {
-  .Servicos{
-    flex-direction: column;
-    gap: 20px;
-  }
-
   #secao-servicos {
-    
     display: flex;
-    padding: 0.4rem;
-    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 1rem;
   }
 
-  .outras-categorias{
+  /* Seção de Notebooks e Computadores */
+  .secao-categoria-categoria-especial {
+    flex: 1; /* Ocupa um espaço igual dentro do container */
     display: flex;
     flex-direction: column;
-  }
-  /* Título acima de tudo */
-  .titulo-principal {
-    text-align: center;
-    color: orange;
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 20px;
+    align-items: center;
+    min-height: 500px; /* Define uma altura mínima */
   }
 
-  /* Organização principal */
-  .conteudo-servicos {
+  /* Seção das outras categorias */
+  .secao-categorias-outros {
+    flex: 1;
     display: flex;
-    width: 100%;
-    gap: 20px;
+    flex-direction: column;
+    gap: 20px; /* Espaço entre "Impressoras" e "Smart TVs" */
   }
 
+  .secao-categoria-outros-servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 500px;
+  }
 
+  /* Ajustando os grids internos para ficarem uniformes */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+    width: 100%;
+  }
 
   .grid-item {
-    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%; /* Para manter os cards alinhados */
   }
 }
 

@@ -27,40 +27,71 @@ const servicoItens = {
 }
 
 const Servicos: React.FC = () => {
+    // Categorias que não são "Notebooks e Computadores"
+    const otherCategories = Object.entries(servicoItens).filter(([category]) => category !== "Notebooks e Computadores");
+
     return(
         <div className="Servicos">
             <h1>TUDO O QUE VOCÊ PRECISA EM ASSISTÊNCIA EM INFORMÁTICA</h1>
             <section id='secao-servicos'>
-                {Object.entries(servicoItens).map(([category, items]) => 
-                    <div 
-                        key={category} 
-                        className={`secao-categoria ${category === "Notebooks e Computadores" ? "categoria-especial" : ""}`}
-                    >
-                        <div className='fundo'>
-                            <div className='retangulos1'>
-                                <div className='retangulo-categoria'>
-                                    <h2>{category}</h2>
-                                </div>
-                            </div>
-                        
-                            <div className="grid-container">
-                                {items.map((item, index) => (
-                                    <div key={index} className='grid-item'>
-                                        <img src={item.image} alt="" className='imagem'/>
-                                        <div className="texto-grid-item">
-                                            <h3>{item.description}</h3>
-                                            <p>{item.title}</p>
-                                        </div>
-                                    </div>   
-                                ))}
+                {/* Categoria especial */}
+                <div 
+                    key="Notebooks e Computadores" 
+                    className="secao-categoria-categoria-especial"
+                >
+                    <div className='fundo'>
+                        <div className='retangulos1'>
+                            <div className='retangulo-categoria'>
+                                <h2>Notebooks e Computadores</h2>
                             </div>
                         </div>
+                    
+                        <div className="grid-container">
+                            {servicoItens["Notebooks e Computadores"].map((item, index) => (
+                                <div key={index} className='grid-item'>
+                                    <img src={item.image} alt="" className='imagem'/>
+                                    <div className="texto-grid-item">
+                                        <h3>{item.description}</h3>
+                                        <p>{item.title}</p>
+                                    </div>
+                                </div>   
+                            ))}
+                        </div>
                     </div>
-                )}
+                </div>
+
+                {/* Outras categorias na mesma div */}
+                <div className="secao-categorias-outros">
+                    {otherCategories.map(([category, items]) => 
+                        <div 
+                            key={category} 
+                            className="secao-categoria-outros-servicos"
+                        >
+                            <div className='fundo'>
+                                <div className='retangulos1'>
+                                    <div className='retangulo-categoria'>
+                                        <h2>{category}</h2>
+                                    </div>
+                                </div>
+                            
+                                <div className="grid-container">
+                                    {items.map((item, index) => (
+                                        <div key={index} className='grid-item'>
+                                            <img src={item.image} alt="" className='imagem'/>
+                                            <div className="texto-grid-item">
+                                                <h3>{item.description}</h3>
+                                                <p>{item.title}</p>
+                                            </div>
+                                        </div>   
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                </div>
             </section>
         </div>
     )
 }
-
 
 export default Servicos
