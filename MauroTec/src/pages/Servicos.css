@@ -2,6 +2,7 @@
 .Servicos {
     padding: 16px;
     font-family: 'Novecento';
+  
   }
   
   h1{
@@ -132,52 +133,74 @@
     }
   }
   
-  /* Configurações para desktops (min-width: 1200px) */
-  @media (min-width: 1200px) {
-    .grid-container {
-      grid-template-columns: repeat(2,1fr); /* 3 colunas ou mais */
-      gap: 20px;
-      padding: 20px;
-    }
-  
-    .retangulo-categoria{
-      width: 44%;
-    }
-    .secao-categoria h2 {
-      font-size: 1.8rem; /* Título ainda maior */
-    }
-  
-    .grid-item h3 {
-      font-size: 1.4rem; /* Título do item ainda maior */
-    }
-    .fundo{
-      background-color: #f2f2f2;
-      padding: 2rem;
-      border-radius: 2rem;
-  
-    }
+/* Configurações para desktops (min-width: 1200px) */
+#secao-servicos {
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
-    .imagem {
-      width: 100%; /* Faz a imagem ocupar 100% do contêiner */
-      height: 200px; /* Define uma altura fixa para todas as imagens */
-      object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
-      border-radius: 0.4rem;
-      justify-self: center;
-      padding: 1rem;
-      border-radius: 0.4rem;
+.secao-categoria {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.categoria-especial {
+  flex-direction: row-reverse;
+}
+
+.fundo {
+  flex: 2;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid-item {
+  padding: 16px;
+}
+
+/* Configurações para desktops (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .Servicos{
+    flex-direction: column;
+    gap: 20px;
   }
 
-    h1{
-      font-size: 2.5rem;
-      padding: 2rem;
-    }
-
-    .grid-item p {
-      font-size: 1rem; /* Descrição ainda maior */
-    }
-
-    .grid-item{
-      justify-content: space-between;
-      justify-items:center;
-    }
+  #secao-servicos {
+    
+    display: flex;
+    padding: 0.4rem;
+    flex-direction: row;
   }
+
+  .outras-categorias{
+    display: flex;
+    flex-direction: column;
+  }
+  /* Título acima de tudo */
+  .titulo-principal {
+    text-align: center;
+    color: orange;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  /* Organização principal */
+  .conteudo-servicos {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+  }
+
+
+
+  .grid-item {
+    padding: 16px;
+  }
+}
+

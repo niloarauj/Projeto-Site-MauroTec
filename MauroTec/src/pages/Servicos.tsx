@@ -28,18 +28,21 @@ const servicoItens = {
 
 const Servicos: React.FC = () => {
     return(
-            <div className="Servicos">
-                <section id='secao-servicos'>
-                    <h1>TUDO O QUE VOCÊ PRECISA EM ASSISTÊNCIA EM INFORMÁTICA</h1>
-                    {Object.entries(servicoItens).map(([category, items]) => 
-                        <div key={category} className='secao-categoria'>
-                            <div className='fundo'>
-                                <div className='retangulos1'>
+        <div className="Servicos">
+            <h1>TUDO O QUE VOCÊ PRECISA EM ASSISTÊNCIA EM INFORMÁTICA</h1>
+            <section id='secao-servicos'>
+                {Object.entries(servicoItens).map(([category, items]) => 
+                    <div 
+                        key={category} 
+                        className={`secao-categoria ${category === "Notebooks e Computadores" ? "categoria-especial" : ""}`}
+                    >
+                        <div className='fundo'>
+                            <div className='retangulos1'>
                                 <div className='retangulo-categoria'>
                                     <h2>{category}</h2>
                                 </div>
                             </div>
-                            
+                        
                             <div className="grid-container">
                                 {items.map((item, index) => (
                                     <div key={index} className='grid-item'>
@@ -48,22 +51,16 @@ const Servicos: React.FC = () => {
                                             <h3>{item.description}</h3>
                                             <p>{item.title}</p>
                                         </div>
-                                        <img src="" alt="" />
                                     </div>   
                                 ))}
                             </div>
-                            </div>
-                            
+                        </div>
                     </div>
-                    
-                )
-                
-                }
+                )}
             </section>
         </div>
-    
-        
     )
 }
+
 
 export default Servicos
