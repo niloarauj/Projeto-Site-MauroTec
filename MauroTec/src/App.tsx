@@ -9,7 +9,8 @@ import QuemSomos from './pages/QuemSomos.tsx'
 import Consultoria from './pages/Consultoria.tsx'
 import ComoFunciona from './pages/ComoFunciona.tsx'
 import Avaliacoes from './pages/Avaliacoes.tsx'
-
+import TrustmaryWidget from './pages/TrustmaryWidget.tsx'
+import Localizacao from './pages/Localizacao.tsx'
 import Footer from './pages/Footer.tsx'
 
 function App() {
@@ -25,7 +26,8 @@ function App() {
       <ComoFunciona/>
 
       <Avaliacoes/>
-
+      {/* <TrustmaryWidget/> */}
+      <Localizacao/>
       <QuemSomos/>
 
 

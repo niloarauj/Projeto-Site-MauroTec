@@ -1,0 +1,14 @@
+.localizacaoMainDiv{
+    padding-top: 2rem;
+
+}
+
+.textoLocalizacao{
+    text-align: center;
+}
+
+.mapaLoc{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
