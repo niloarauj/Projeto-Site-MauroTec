@@ -1,16 +1,55 @@
-.localizacaoMainDiv{
+/* Estilos gerais */
+.localizacaoMainDiv {
     padding-top: 2rem;
-
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-.textoLocalizacao{
+.textoLocalizacao {
     text-align: center;
     font-family: PoppinsThin;
     font-size: 1.7rem;
+
 }
 
-.mapaLoc{
-    align-items: center;
-    justify-content: center;
+.mapaLoc {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+iframe {
+    width: 100%; /* Para ocupar toda a largura no mobile */
+    height: 300px;
+    border: none;
+}
+
+/* Estilos para tablets */
+@media (min-width: 768px) {
+    .textoLocalizacao {
+        font-size: 1.2rem;
+    }
+
+    iframe {
+        width: 80%; /* Reduzindo um pouco a largura para não ficar muito esticado */
+        height: 400px;
+    }
+}
+
+/* Estilos para desktops */
+@media (min-width: 1024px) {
+    .localizacaoMainDiv {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .textoLocalizacao {
+        font-size: 1.4rem;
+    }
+
+    iframe {
+        width: 600px;
+        height: 450px;
+    }
 }
