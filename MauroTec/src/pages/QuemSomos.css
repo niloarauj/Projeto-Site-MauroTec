@@ -3,6 +3,11 @@
     src: url('src/assets/fonts/Poppins-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: PoppinsThin;
+    src: url('src/assets/fonts/Poppins-Thin.ttf') format('truetype');
+}
+
 h1{
     padding: 0;
     margin: 0;
@@ -23,7 +28,8 @@ h1{
 .descricaoQuemSomos{
     text-align: center;
     display: flex;
-    font-size: 1.2rem; 
+    font-size: 2rem; 
+    font-family: PoppinsThin;
 }
 
 

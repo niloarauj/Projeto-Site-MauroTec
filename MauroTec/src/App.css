@@ -7,6 +7,11 @@
   src: url('src/assets/fonts/Novecento-WideBold.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: PoppinsThin;
+  src: url('src/assets/fonts/Poppins-Thin.ttf') format('truetype');
+}
+  
 .reviews-carousel {
   width: 80%;
   margin: auto;
