@@ -6,13 +6,16 @@
 
 h1{
     padding-inline: 2rem;
+    justify-content: center;
+    display: flex;
+    
 }
 .subtituloConsultoria{
     text-align: center;
     font-size: 1.1rem;
     padding-inline: 2rem;
     font-family: PoppinsThin;
-    
+    font-weight: bold;
 }
 
 .descricaoConsultoria{

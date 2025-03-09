@@ -1,12 +1,15 @@
 /* Estilo base para dispositivos móveis */
-.avaliacoesMainDiv {
-}
 
+h1{
+    justify-items: center;
+    display: flex;
+}
 .textosAvaliacoes {
     padding-top: 2rem;
     text-align: center;
     font-size: 1.1rem; 
     font-family: 'PoppinsThin', sans-serif;
+    font-weight: bold;
 }
 
 .tituloAvaliacoes, .textoAvaliacoes {
@@ -14,8 +17,6 @@
 }
 
 @media (min-width: 768px) {
-    .avaliacoesMainDiv {
-    }
 
     .textosAvaliacoes {
         font-size: 1.1rem; 

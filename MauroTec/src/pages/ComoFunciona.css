@@ -1,16 +1,18 @@
 .comoFuncionaMainDiv {
   padding-inline: 4rem;
+  font-weight: bold;
 }
 
 .conteudoComoFunciona {
   display: flex;
   flex-direction: column;
   font-family: 'Poppins', sans-serif; 
-
+  
 }
 
 .textoColetaEntregaDiv{
   font-family: PoppinsThin;
+  
 }
 
 .fontDiagnosticos{
@@ -50,18 +52,20 @@
   flex: 1;
   text-align: center;
   border-radius: 8px;
-
+  
 }
 
 .numero {
   font-size: 10vw;
   font-weight: bold;
   color: #e4e4e4;
+  
 
 }
 
 .textoPasso{
   color: #fc6404;
+  
 }
 
 .servicosExpressComoFunciona{

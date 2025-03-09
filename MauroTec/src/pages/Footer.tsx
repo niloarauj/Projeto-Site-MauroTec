@@ -28,7 +28,7 @@ function Footer(){
                     </div>
 
                     <div className="divHorarioAtendimento">
-                        <h2>HORARIO DE ATENDIMENTO</h2>
+                        <h2>HORÁRIO DE ATENDIMENTO</h2>
                         <p className='paragrafo'><b>Segunda à sexta:</b> 08:00 às 19:00</p>
                         <p className='paragrafo'><b>Sábado:</b> 08:00 às 18:00 </p>
                         <p className='paragrafo'><b> (Fechamos para almoço:</b> 12:30 às 14:30)</p>
