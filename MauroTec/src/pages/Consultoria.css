@@ -5,10 +5,11 @@
 }
 
 h1{
-    padding-inline: 2rem;
+    
     justify-content: center;
     display: flex;
-    
+    text-align: center;
+    align-items: center;
 }
 .subtituloConsultoria{
     text-align: center;

@@ -1,9 +1,24 @@
 /* Estilos gerais */
 .catalog-grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
   padding: 16px;
+}
+
+.items-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.marcas {
+  width: 80%;
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .category-box {
@@ -16,24 +31,15 @@
 .category-title {
   font-size: 18px;
   font-weight: bold;
-  color: #e67e22;
-  border-bottom: 2px solid #e67e22;
   padding-bottom: 8px;
   margin-bottom: 12px;
-  justify-content: center;
-  display: flex;
-}
-.items-info{
-  justify-content: center;
-  
-  flex-wrap: wrap;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
   text-align: center;
 }
+
 .category-items {
   display: grid;
   gap: 12px;
+  padding-top: 10px;
 }
 
 .item-box {
@@ -46,6 +52,20 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.retangulo-servicos {
+  background-color: #747474;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  height: auto;
+  padding: 0.4rem;
+  box-sizing: border-box;
+  box-shadow: -0.3rem -0.15rem 0 0.1px #fc741c;
+  width: 100%;
+}
+
 .item-image {
   width: 100px;
   height: 100px;
@@ -56,11 +76,8 @@
 .item-title {
   font-size: 16px;
   font-weight: bold;
-  color: #d35400;
+  color: #fc6404;
   margin-top: 8px;
-  justify-content: center;
-  display: flex;
-  padding-top: 0.3rem;
 }
 
 .item-description {
@@ -72,22 +89,52 @@
 /* Responsivo para tablets */
 @media (min-width: 768px) {
   .catalog-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .item-box {
     flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
   }
-  .item-image {
-    width: 100px;
-    height: 100px;
-    margin-right: 12px;
+
+  .single-category, .stacked-categories {
+    width: 50%;
   }
 }
 
-/* Responsivo para desktop */
+/* Responsivo para desktops */
 @media (min-width: 1024px) {
   .catalog-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch; /* Mantém ambas as colunas com a mesma altura */
+  }
+
+  .single-category,
+  .stacked-categories {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Faz com que ambas as colunas tenham a mesma altura */
+  }
+
+  .category-box {
+    flex: 1; /* Garante que todas as caixas tenham a mesma altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribui os elementos uniformemente */
+  }
+
+  .stacked-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .category-items {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .retangulo-servicos {
+    width: 45%;
+  }
+
+  .marcas {
+    width: 32rem;
   }
 }
