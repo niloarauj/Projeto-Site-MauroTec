@@ -7,12 +7,12 @@ return(
         <img src="src\assets\images\Logo1.png" alt="Imagem no React" className='logo'/>
         <nav className='nav-buttons'>
             <ul>
-                <li className = "nav-button">Início</li>
-                <li className = "nav-button">Serviços</li>
-                <li className = "nav-button">Como Funciona</li>
-                <li className = "nav-button">Avaliações</li>
-                <li className = "nav-button">Localização</li>
-                <li className = "nav-button">Quem Somos</li>
+                <li className = "nav-button"><a href="#main-section">Início</a></li>
+                <li className = "nav-button"><a href="#servicos-section">Serviços</a></li>
+                <li className = "nav-button"><a href="#como-funciona-section">Como Funciona</a></li>
+                <li className = "nav-button"><a href="#avaliacoes-section">Avaliações</a></li>
+                <li className = "nav-button"><a href="#localizacao-section">Localização</a></li>
+                <li className = "nav-button"><a href="#quemsomos-section">Quem Somos</a></li>
             </ul>
         </nav>
         <div className="whatsapp-container">

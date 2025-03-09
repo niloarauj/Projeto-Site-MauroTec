@@ -1,7 +1,47 @@
-.avaliacoesMainDiv{
-
+/* Estilo base para dispositivos móveis */
+.avaliacoesMainDiv {
 }
 
-.textosAvaliacoes{
+.textosAvaliacoes {
+    padding-top: 2rem;
     text-align: center;
+    font-size: 1.1rem; 
+    font-family: 'PoppinsThin', sans-serif;
+}
+
+.tituloAvaliacoes, .textoAvaliacoes {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .avaliacoesMainDiv {
+    }
+
+    .textosAvaliacoes {
+        font-size: 1.1rem; 
+    }
+
+    .tituloAvaliacoes {
+        font-size: 1.1rem; 
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .avaliacoesMainDiv{
+        justify-content: center;
+    }
+
+    .textosAvaliacoes {
+        font-size: 1.7rem; 
+    }
+
+    h1{
+        padding-left: 0;
+    }
+
+    .tituloAvaliacoes {
+        font-size: 1.7rem;
+        
+    }
 }

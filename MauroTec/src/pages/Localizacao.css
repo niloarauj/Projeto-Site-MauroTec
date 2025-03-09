@@ -8,7 +8,7 @@
 .textoLocalizacao {
     text-align: center;
     font-family: PoppinsThin;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
 
 }
 
@@ -40,16 +40,15 @@ iframe {
 /* Estilos para desktops */
 @media (min-width: 1024px) {
     .localizacaoMainDiv {
-        max-width: 900px;
         margin: 0 auto;
     }
 
     .textoLocalizacao {
-        font-size: 1.4rem;
+        font-size: 1.7rem;
     }
 
     iframe {
-        width: 600px;
+        width: 1200px;
         height: 450px;
     }
 }

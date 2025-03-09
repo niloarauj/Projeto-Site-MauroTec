@@ -20,20 +20,38 @@ function App() {
 
       <Header />
 
-      <Main/>
-      <Servicos/>
-      <Consultoria/>
-      <ComoFunciona/>
+      <div id="main-section">
+          <Main />
+      </div>
 
-      <Avaliacoes/>
-      {/* <TrustmaryWidget/> */}
-      <Localizacao/>
-      <QuemSomos/>
+      <div id="servicos-section">
+        <Servicos/>
+      </div>
 
+      <div id="consultoria-section">
+        <Consultoria />
+      </div>
+
+      <div id="como-funciona-section">
+          <ComoFunciona />
+      </div>
+      
+      <div id="avaliacoes-section">
+        <Avaliacoes/>
+        <TrustmaryWidget/>
+        <script src="https://widget.trustmary.com/62grob6Iy"></script> 
+      </div>
+
+      <div id="localizacao-section">
+          <Localizacao />
+      </div>
+
+      <div id="quemsomos-section">
+          <QuemSomos />
+      </div>
 
 
       <Footer/>
-
 
     </div>
 

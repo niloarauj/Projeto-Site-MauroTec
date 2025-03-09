@@ -1,11 +1,161 @@
-.Footer {
+/* Estilos gerais - Mobile First */
+.footerContainer {
+    display: flex;
+    flex-direction: column;
     width: 100vw;
-    height: 30vh;
-    margin-top: auto;
-    border-top: 8px solid#fc6404;
-    
+    height: auto; /* Ajustando a altura para ser automática */
+    font-family: Poppins;
+    padding: 2rem 0;
 }
 
-.logo-maurotec{
+.mainDivFooter {
     display: flex;
+    flex-direction: column;
+    width: 100vw;
+    border-top: 8px solid #fc6404;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.logoRedesSociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.logoMauroTec {
+    width: auto;
+    height: auto;
+    max-width: 250px;
+    transition: max-width 0.3s ease-in-out; 
+}
+
+.redesSociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1.5rem;
+    gap: 1.5rem; /* Espaçamento entre os ícones */
+}
+
+.logoInstagram, .logoWhatsApp {
+    width: auto;
+    height: auto;
+    max-width: 60px; /* Ajuste dos tamanhos dos ícones */
+    transition: max-width 0.3s ease-in-out; /* Transição suave */
+}
+
+.subDivFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    justify-content: space-between;
+}
+
+.divContatos, .divEndereco, .divHorarioAtendimento {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem; /* Tamanho da fonte inicial */
+}
+
+.divDireitosReservados {
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    font-size: 1rem;
+    padding-top: 2rem;
+}
+
+/* Parágrafos */
+.paragrafo {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .logoMauroTec {
+        max-width: 180px; 
+    }
+
+    .logoInstagram, .logoWhatsApp {
+        max-width: 45px;
+    }
+
+    .divContatos, .divEndereco, .divHorarioAtendimento {
+        font-size: 0.9rem; 
+    }
+
+    .divDireitosReservados {
+        font-size: 0.9rem; 
+    }
+
+    .subDivFooter {
+        gap: 2rem; 
+        padding-left: 2rem;
+        padding-right: 2rem;
+        
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+    .logoMauroTec {
+        max-width: 220px; 
+    }
+    .logoInstagram, .logoWhatsApp {
+        max-width: 50px; 
+    }
+
+    .divContatos, .divEndereco, .divHorarioAtendimento {
+        font-size: 1rem; 
+    }
+
+    .divDireitosReservados {
+        font-size: 1rem; 
+    }
+
+    .subDivFooter {
+        gap: 4rem; 
+    }
+}
+
+@media (min-width: 1200px) {
+    
+    .mainDivFooter {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .subDivFooter{
+        flex-direction: row;
+        padding-inline: 4rem;
+    }
+    
+    .logoRedesSociais{
+        padding-left: 2rem;
+
+    }
+    
+    .logoMauroTec {
+        max-width: 200px; 
+        
+    }
+
+    .logoInstagram, .logoWhatsApp {
+        max-width: 60px; 
+    }
+
+    .divContatos, .divEndereco, .divHorarioAtendimento {
+        font-size: 1rem; 
+    }
+
+    .divDireitosReservados {
+        font-size: 1rem; 
+        padding-top: 0;
+    }
+
+    .subDivFooter {
+        gap: 6rem;
+    }
 }

@@ -25,25 +25,25 @@ function ComoFunciona() {
           <div className="passo">
             <div className="numero">1</div>
             <h3 className='textoPasso'>Diagnóstico</h3>
-            <p>Solicite um orçamento personalizado para o seu equipamento</p>
+            <p className='fontDiagnosticos'>Solicite um orçamento personalizado para o seu equipamento</p>
           </div>
 
           <div className="passo">
             <div className="numero">2</div>
             <h3 className='textoPasso'>Orçamento</h3>
-            <p>Aprovando o diagnóstico, ajustamos o prazo e forma de pagamento</p>
+            <p className='fontDiagnosticos'>Aprovando o diagnóstico, ajustamos o prazo e forma de pagamento</p>
           </div>
 
           <div className="passo">
             <div className="numero">3</div>
             <h3 className='textoPasso'>Execução</h3>
-            <p>Sem surpresas e com transparência, executamos o serviço com qualidade</p>
+            <p className='fontDiagnosticos'>Sem surpresas e com transparência, executamos o serviço com qualidade</p>
           </div>
 
           <div className="passo">
             <div className="numero">4</div>
             <h3 className='textoPasso'>Testes</h3>
-            <p>Garantimos a qualidade final realizando testes completos no seu equipamento</p>
+            <p className='fontDiagnosticos'>Garantimos a qualidade final realizando testes completos no seu equipamento</p>
           </div>
         </div>
 
@@ -61,12 +61,13 @@ function ComoFunciona() {
 
           <p className="atencaoExpress"> Atenção: Alterações e necessidades de prazos adicionais são expressamente comunicadas ao cliente.</p>
 
-          <p className="tipoAceito">Aceitamos cartões, parcelamos em até 12x (com acréscimo da maquineta);<br></br>
-          5% de desconto para pagamentos em Espécie ou Pix</p>
+          
 
         </div>
 
       </div>
+      <p className="tipoAceito">Aceitamos cartões, parcelamos em até 12x (com acréscimo da maquineta);<br></br>
+      5% de desconto para pagamentos em Espécie ou Pix</p>
 
 
 
