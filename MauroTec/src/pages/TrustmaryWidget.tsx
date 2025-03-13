@@ -1,4 +1,6 @@
+import './TrustMaryWidget.css'
 import React, { useEffect } from "react";
+
 const TrustmaryWidget: React.FC = () => {
   useEffect(() => {
     const script = document.createElement("script");

@@ -24,7 +24,8 @@ function Footer(){
                         
                     <div className="divEndereco">
                         <h2>ENDEREÇO</h2>
-                        <p className='paragrafo'>Loja: Rua Manoel Antônio Leite, 243<br></br>Bonsucesso, Fortaleza – CE, 60545-300</p>
+                        <p className='paragrafo'><b>Loja 1:</b> Rua Manoel Antônio Leite, 243<br></br>Bonsucesso, Fortaleza – CE, 60545-300</p>
+                        <p className='paragrafo'><b>Loja 2:</b> Rua André Rebouças, 110 - Bonsucesso, Fortaleza - CE, 60520-797</p>
                     </div>
 
                     <div className="divHorarioAtendimento">

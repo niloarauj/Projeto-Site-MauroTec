@@ -1,0 +1,32 @@
+.buttonParado{
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: #25d366;
+    position: absolute; 
+    bottom: 2rem; 
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 99999 !important; 
+
+}
+
+.dentroDoButton{
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.iconeZap{
+    height: auto;
+    width: 50px;
+}
+
+.textoDentroButton{
+    color: white;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: bold;
+}
