@@ -10,6 +10,16 @@
   
 }
 
+.imagem-passo{
+  display: flex;
+}
+
+.imagem-numero{
+  width: 25%;
+  height: 25%;
+  
+}
+
 .textoColetaEntregaDiv{
   font-family: PoppinsThin;
   

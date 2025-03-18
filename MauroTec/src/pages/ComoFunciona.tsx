@@ -23,25 +23,45 @@ function ComoFunciona() {
 
         <div className="passosContainer">
           <div className="passo">
-            <div className="numero">1</div>
+          <div className='image-passo'>
+              <div className='imagem-numero'>
+                <img src="MauroTec\src\assets\images\iconediagnostico.png" alt="" />
+              </div>
+              <div className="numero">1</div>
+            </div>
             <h3 className='textoPasso'>Diagnóstico</h3>
             <p className='fontDiagnosticos'>Solicite um orçamento personalizado para o seu equipamento</p>
           </div>
 
           <div className="passo">
-            <div className="numero">2</div>
+          <div className='image-passo'>
+              <div className='imagem-numero'>
+                <img src="MauroTec\src\assets\images\iconeorcamentos.png" alt="" />
+              </div>
+              <div className="numero">2</div>
+            </div>
             <h3 className='textoPasso'>Orçamento</h3>
             <p className='fontDiagnosticos'>Aprovando o diagnóstico, ajustamos o prazo e forma de pagamento</p>
           </div>
 
           <div className="passo">
-            <div className="numero">3</div>
+            <div className='image-passo'>
+              <div className='imagem-numero'>
+                <img src="MauroTec\src\assets\images\iconeexecucao.png" alt="" />
+              </div>
+              <div className="numero">3</div>
+            </div>
             <h3 className='textoPasso'>Execução</h3>
             <p className='fontDiagnosticos'>Sem surpresas e com transparência, executamos o serviço com qualidade</p>
           </div>
 
           <div className="passo">
-            <div className="numero">4</div>
+            <div className='image-passo'>
+                <div className='imagem-numero'>
+                  <img src="MauroTec\src\assets\images\iconetestes.png" alt="" />
+                </div>
+                <div className="numero">4</div>
+            </div>
             <h3 className='textoPasso'>Testes</h3>
             <p className='fontDiagnosticos'>Garantimos a qualidade final realizando testes completos no seu equipamento</p>
           </div>

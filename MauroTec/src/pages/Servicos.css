@@ -1,75 +1,70 @@
-/* Estilos gerais */
-.catalog-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 16px;
-}
-
-.items-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.marcas {
-  width: 80%;
-  padding-top: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.category-box {
-  background: #f5f5f5;
-  padding: 16px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.category-title {
-  font-size: 18px;
+.titulo {
+  color: #fc6404;
   font-weight: bold;
-  padding-bottom: 8px;
-  margin-bottom: 12px;
   text-align: center;
+  padding: 20px ;
+  font-size: 0.8rem;
 }
-
-.category-items {
-  display: grid;
-  gap: 12px;
-  padding-top: 10px;
-}
-
-.item-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: white;
-  padding: 12px;
-  border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.retangulo-servicos {
+.retangulo-servicos{
   background-color: #747474;
   color: white;
   display: flex;
+  width: 45%;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
   height: auto;
   padding: 0.4rem;
   box-sizing: border-box;
-  box-shadow: -0.3rem -0.15rem 0 0.1px #fc741c;
-  width: 100%;
+  box-shadow: -0.3rem -0.15rem 0 0.1px #fc741c ;
+}
+/* 🔹 Layout Principal */
+.catalog-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+/* 🔸 Box de cada Categoria */
+.category-box {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 🔹 Título de Cada Categoria */
+.category-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* 🔸 Itens de Cada Categoria */
+.category-items {
+  display: grid;
+  gap: 12px;
+}
+
+/* 🔹 Box de Cada Item */
+.item-box {
+  background: #fff;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .item-image {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  max-height: 300px;
   border-radius: 4px;
 }
 
@@ -83,58 +78,63 @@
 .item-description {
   font-size: 14px;
   color: #555;
-  text-align: center;
 }
 
-/* Responsivo para tablets */
+.marcas {
+  width: 80%;
+  margin-top: 10px;
+}
+
+/* 📱 Mobile-first (Padrão) */
+.category-items {
+  grid-template-columns: 1fr;
+}
+
+/* 📟 Tablet (mínimo 768px) */
 @media (min-width: 768px) {
-  .catalog-grid {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .single-category, .stacked-categories {
-    width: 50%;
-  }
-}
-
-/* Responsivo para desktops */
-@media (min-width: 1024px) {
-  .catalog-grid {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: stretch; /* Mantém ambas as colunas com a mesma altura */
-  }
-
-  .single-category,
-  .stacked-categories {
-    display: flex;
-    flex-direction: column;
-    flex: 1; /* Faz com que ambas as colunas tenham a mesma altura */
-  }
-
-  .category-box {
-    flex: 1; /* Garante que todas as caixas tenham a mesma altura */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Distribui os elementos uniformemente */
-  }
-
-  .stacked-categories {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
   .category-items {
     grid-template-columns: repeat(2, 1fr);
   }
+}
 
-  .retangulo-servicos {
-    width: 45%;
+/* 🖥️ Desktop (mínimo 1024px) */
+@media (min-width: 1024px) {
+  .category-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
   }
 
-  .marcas {
-    width: 32rem;
+  .item-box {
+    width: 20%; /* Ajustando largura para manter proporção */
+    min-width: 250px; /* Garantindo que não fiquem muito pequenos */
+    height: 300px; /* Melhorando a altura para conteúdo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+  }
+
+  /* 🔸 Box de cada Categoria */
+  .category-box {
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow:none;
+    text-align: center;
+  }
+
+  .stacked-categories{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item-image {
+    width: 100%;
+    height: 180px; /* Mantendo um tamanho fixo */
+    object-fit: cover; /* Ajustando a imagem para ocupar bem o espaço */
   }
 }

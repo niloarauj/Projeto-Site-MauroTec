@@ -1,0 +1,25 @@
+
+.whatsapp-botaofixo {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+.whatsapp-botaofixo img {
+    width: 50px;
+    height: 50px;
+}
+
+.whatsapp-botaofixo:hover {
+    transform: scale(1.1);
+}
