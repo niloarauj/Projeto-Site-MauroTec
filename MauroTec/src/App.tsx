@@ -18,7 +18,7 @@ function App() {
     <>
     <div className='container'>
 
-      <Botao/>
+      
 
       <Header />
 
