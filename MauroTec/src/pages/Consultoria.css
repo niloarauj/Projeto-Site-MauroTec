@@ -1,6 +1,5 @@
 .conteudoConsultoria{
     flex-direction: column;
-    display: flex;
     padding-inline: 2rem;
 }
 
@@ -46,7 +45,7 @@ h1{
         padding-bottom: 4rem;
     }
     .conteudoConsultoria{
-        flex-direction: row;
+        flex-direction: row-reverse;
         display: flex;
         padding-inline: 4rem;
     }
@@ -62,6 +61,7 @@ h1{
         padding-inline: 12rem;
         text-align: center;
         font-size: 1.5rem;
+        margin: 0;
     }
     
     .descricaoConsultoria{

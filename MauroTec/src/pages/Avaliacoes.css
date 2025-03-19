@@ -5,11 +5,14 @@ h1{
     display: flex;
 }
 .textosAvaliacoes {
-    padding-top: 2rem;
+    
     text-align: center;
     font-size: 1.1rem; 
     font-family: 'PoppinsThin', sans-serif;
     font-weight: bold;
+   
+    padding-inline: 1rem;
+    margin: 0;
 }
 
 .tituloAvaliacoes, .textoAvaliacoes {

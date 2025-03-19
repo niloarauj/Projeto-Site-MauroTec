@@ -44,7 +44,8 @@ iframe {
     }
 
     .textoLocalizacao {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
+        margin: 0;
     }
 
     iframe {
