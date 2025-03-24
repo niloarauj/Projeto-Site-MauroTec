@@ -2,15 +2,15 @@
 .header {
     background: white;
     width: 100vw;
-    min-height: 10vh;
-    position: relative;
+    min-height: 4vh;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 2rem;
+    padding: 1rem;
+    border-bottom: 4px solid #fc6404;
+
 }
 
 .nav-button{
@@ -30,10 +30,9 @@ a:hover{
 .logo {
     width: auto;
     height: auto;
-    max-width: 200px; /* Ajuste conforme necessário */
-    object-fit: contain;
+    max-width: 80px; /* Ajuste conforme necessário */
+    object-fit: cover;
     
-    justify-content: center;
 }
 .nav-buttons ul {
     list-style-type: none;
@@ -42,6 +41,15 @@ a:hover{
 
 .nav-buttons {
     display: none;
+}
+
+
+.whatsapp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
 }
 
 .whatsapp-button {
@@ -62,12 +70,7 @@ a:hover{
     height: 18px;
 }
 
-.whatsapp-container {
-    padding-right: 2rem;
-    margin-left: auto;
-    display: none;
-    align-items: center;
-}
+
 
 
 @media (hover: hover) {

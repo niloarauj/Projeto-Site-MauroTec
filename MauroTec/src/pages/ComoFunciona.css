@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   font-family: 'Poppins', sans-serif; 
+  gap: 2rem;
   
 }
 
@@ -15,13 +16,17 @@
 }
 
 .imagem-numero{
-  width: 25%;
-  height: 25%;
+  height: auto;
+  width: 100px;
+  image-rendering: pixelated; 
+  object-fit: contain;
+  
   
 }
 
 .textoColetaEntregaDiv{
   font-family: PoppinsThin;
+
   
 }
 
@@ -33,6 +38,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.5);
 }
 
 .caminhao {
@@ -53,17 +60,49 @@
 
 .passosContainer {
   display: flex;
+  padding-bottom: 12rem;
+  flex-wrap: wrap;
+  
 
-  justify-content: space-between; 
-  gap: 1rem; 
 }
 
 .passo {
   flex: 1;
+  justify-content: center;
   text-align: center;
   border-radius: 8px;
-  
+  display: flex;
+  flex-direction: row;
 }
+
+.fotoImagem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  transform: translateY(8rem);
+
+}
+
+
+
+.textosObservacaoExtra{
+  font-family: PoppinsThin;
+  color: #666;
+
+}
+
+.textosObservacao{
+  font-family:Arial, Helvetica, sans-serif;
+  color: #666;
+}
+
+
+
+
 
 .numero {
   font-size: 10vw;
@@ -75,6 +114,8 @@
 
 .textoPasso{
   color: #fc6404;
+  font-size: 2rem;
+  margin:0;
   
 }
 
@@ -82,12 +123,17 @@
   display: flex;
   flex-direction:  row;
   align-items: flex-start;
-  padding-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+
 }
 
 .centralExpress{
   display: flex;
   flex-direction: column;
+
+  
 }
 h1{
   justify-items: center;

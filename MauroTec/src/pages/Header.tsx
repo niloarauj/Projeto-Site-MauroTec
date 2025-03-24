@@ -5,6 +5,7 @@ function Header(){
 return(
     <div className='header'>
         <img src="src\assets\images\Logo1.png" alt="Imagem no React" className='logo'/>
+
         <nav className='nav-buttons'>
             <ul>
                 <li className = "nav-button"><a href="#main-section">Início</a></li>
@@ -21,6 +22,9 @@ return(
             </a>
             
         </div>
+
+        
+
     </div>
 )
 }

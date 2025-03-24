@@ -10,7 +10,6 @@ function Botao(){
 
                 <div className="dentroDoButton">
                         <img src="src/assets/images/whatsapp-icon.svg" alt="zap" className='iconeZap'/>
-                        <p className="textoDentroButton">#ChegaJuntoMauroTec</p>
                 </div>
             </a>
 

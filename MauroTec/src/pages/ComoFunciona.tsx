@@ -22,48 +22,71 @@ function ComoFunciona() {
 
 
         <div className="passosContainer">
+
           <div className="passo">
-          <div className='image-passo'>
-              <div className='imagem-numero'>
-                <img src="MauroTec\src\assets\images\iconediagnostico.png" alt="" />
-              </div>
+
+
+
               <div className="numero">1</div>
-            </div>
-            <h3 className='textoPasso'>Diagnóstico</h3>
-            <p className='fontDiagnosticos'>Solicite um orçamento personalizado para o seu equipamento</p>
+              <div className="fotoImagem">
+
+                <img src="src/assets/images/iconediagnostico.png" alt=""  className='imagem-numero'/>
+
+
+                <p className='textoPasso'>Diagnóstico</p>
+
+                <p className='fontDiagnosticos'>Solicite um orçamento<br></br> personalizado para o seu<br></br> equipamento</p>
+                
+                <p className='textosObservacaoExtra'><span className='textosObservacao'>Referência:</span>   3 dias</p>
+              </div> 
           </div>
 
           <div className="passo">
-          <div className='image-passo'>
-              <div className='imagem-numero'>
-                <img src="MauroTec\src\assets\images\iconeorcamentos.png" alt="" />
-              </div>
-              <div className="numero">2</div>
+
+            <div className="numero">2</div>
+
+            <div className="fotoImagem">
+
+              <img src="src/assets/images/iconeOrcamento.png" alt="" className='imagem-numero'/>
+
+              <p className='textoPasso'>Orçamento</p>
+
+              <p className='fontDiagnosticos'><span className='textosObservacao'>Após o Diagnóstico, <br></br></span> enviamos a você o orçamento<br></br> para avaliar e<br></br>autorizar a continuidade. </p>
+
             </div>
-            <h3 className='textoPasso'>Orçamento</h3>
-            <p className='fontDiagnosticos'>Aprovando o diagnóstico, ajustamos o prazo e forma de pagamento</p>
+          </div>
+
+
+          <div className="passo">
+
+
+            <div className="numero">3</div>
+            <div className="fotoImagem">
+
+              <img src="src\assets\images\iconeExecucao.png" alt=""  className='imagem-numero'/>
+
+              <p className='textoPasso'>Execução</p>
+
+              <p className='fontDiagnosticos'><span className='textosObservacao'>Somente após<br></br>orçamento autorizado,</span><br></br>realizamos a execução.</p>
+
+            </div>
           </div>
 
           <div className="passo">
-            <div className='image-passo'>
-              <div className='imagem-numero'>
-                <img src="MauroTec\src\assets\images\iconeexecucao.png" alt="" />
-              </div>
-              <div className="numero">3</div>
-            </div>
-            <h3 className='textoPasso'>Execução</h3>
-            <p className='fontDiagnosticos'>Sem surpresas e com transparência, executamos o serviço com qualidade</p>
-          </div>
 
-          <div className="passo">
-            <div className='image-passo'>
-                <div className='imagem-numero'>
-                  <img src="MauroTec\src\assets\images\iconetestes.png" alt="" />
-                </div>
-                <div className="numero">4</div>
+            <div className="numero">4</div>
+
+              <div className="fotoImagem">
+
+                <img src="src\assets\images\iconetestes.png" alt=""  className='imagem-numero'/>
+        
+
+                <p className='textoPasso'>Testes</p>
+
+                <p className='fontDiagnosticos'>Para garantir a melhor<br></br>experiência de uso com seu<br></br> equipamento, realizamos<br></br>rigorosos testes para garantir<br></br>que o reparo foi efetivo.</p>
+
             </div>
-            <h3 className='textoPasso'>Testes</h3>
-            <p className='fontDiagnosticos'>Garantimos a qualidade final realizando testes completos no seu equipamento</p>
+
           </div>
         </div>
 
@@ -73,6 +96,7 @@ function ComoFunciona() {
         <img src="src/assets/images/ícone_Express.png" alt="iconeExpress" className="iconeExpress" />
         
         <div className="centralExpress">
+
           <p className="textoExpress"> Serviços express em até 24h,</p>
           <p className="descricaoTextoExpress">mediante avaliação (Troca de Tela, Troca de Teclado, Upgrade SSD/Memória)</p>
 
