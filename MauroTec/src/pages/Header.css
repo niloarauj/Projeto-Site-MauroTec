@@ -1,39 +1,63 @@
-/* selo fone */
+/* Ajuste no header para evitar cortes */
 .header {
     background: white;
-    width: 100vw;
-    min-height: 4vh;
+    width: 100%;
+    min-height: 60px; /* Garante espaço suficiente */
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
     display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centraliza os itens */
     padding: 1rem;
     border-bottom: 4px solid #fc6404;
-
 }
 
-.nav-button{
+/* Ajuste no botão do menu hambúrguer */
+.menu-button {
+    display: flex;
+    background: none;
+    border: none;
+    font-size: 32px; /* Aumenta o tamanho */
+    cursor: pointer;
+    color: #fc6404;
+    padding: 10px; /* Garante que ele tenha espaço clicável */
+    z-index: 1100; /* Evita que seja coberto por outros elementos */
+}
+
+/* Exibe o botão hambúrguer */
+.menu-button {
+    display: flex;
+    color: #fc6404;
+}
+
+/* Menu escondido por padrão */
+.nav-buttons {
+    display: none;
+}
+
+
+.nav-button {
     font-family: 'Novecento';
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
-
 
 .logo {
     width: auto;
     height: auto;
     max-width: 80px; /* Ajuste conforme necessário */
     object-fit: cover;
-    
 }
+
 .nav-buttons ul {
     list-style-type: none;
     padding-right: 2rem;
@@ -43,13 +67,10 @@ a:hover{
     display: none;
 }
 
-
 .whatsapp-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-
 }
 
 .whatsapp-button {
@@ -66,20 +87,15 @@ a:hover{
 }
 
 .whatsapp-icon {
-    width: 18px; 
+    width: 18px;
     height: 18px;
 }
 
-
-
-
 @media (hover: hover) {
     .nav-button:hover {
-        /* background-color: #fc6404; */
         color: #fc6404;
         text-decoration: underline;
-        text-decoration-color: #fc6404 ;
-
+        text-decoration-color: #fc6404;
     }
 
     .whatsapp-button:hover {
@@ -87,27 +103,24 @@ a:hover{
     }
 }
 
-/*tabret*/
+/* tabret */
 @media (min-width: 768px) {
-
-    .header{
+    .header {
         display: fixed;
         border-bottom: 8px solid #fc6404;
         padding: 1rem;
-
     }
+
     .logo {
         max-width: 80px;
     }
 }
 
-/*pc*/
+/* pc */
 @media (min-width: 1200px) {
-    .header{
+    .header {
         position: fixed;
         border-bottom: 8px solid #fc6404;
-        
-
     }
 
     .logo {
@@ -118,7 +131,7 @@ a:hover{
         padding-left: 4rem;
         padding-top: 0.4rem;
     }
-    
+
     .nav-buttons {
         display: flex;
         flex-grow: 1;
@@ -147,16 +160,15 @@ a:hover{
     .whatsapp-button {
         font-size: 1rem;
     }
-    
+
     .whatsapp-icon {
-        width: 22px; 
+        width: 22px;
         height: 22px;
     }
-    
+
     .whatsapp-container {
         padding-right: 4rem;
         display: flex;
     }
-
-
 }
+

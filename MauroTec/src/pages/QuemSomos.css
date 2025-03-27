@@ -50,8 +50,8 @@ h1{
 .textoQuemSomos{
     font-family: Poppins;
     order: 0;
+    padding: 12px;
     
-
 }
 
 @media (min-width: 768px) {
