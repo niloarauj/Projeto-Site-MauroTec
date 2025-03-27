@@ -26,7 +26,7 @@ function Main(){
                     </a>
 
                 </div>
-                <img src="src/assets/images/equipamentosInicio.png" alt="Equipamentos" className ='imgEquipamentos'/>
+                <img src="MauroTec\public\images\equipamentosInicio.png" alt="Equipamentos" className ='imgEquipamentos'/>
                 {/* <h2 className='tituloInicio'>Assistência técnica multimarcas em Fortaleza</h2> */}
                 
 
