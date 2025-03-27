@@ -12,7 +12,7 @@ import Avaliacoes from './pages/Avaliacoes.tsx'
 import TrustmaryWidget from './pages/TrustmaryWidget.tsx'
 import Localizacao from './pages/Localizacao.tsx'
 import Footer from './pages/Footer.tsx'
-import Botao from './pages/Botao.tsx'
+
 function App() {
   return (
     <>
