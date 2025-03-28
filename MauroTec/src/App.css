@@ -1,15 +1,15 @@
 @font-face {
   font-family: Poppins;
-  src: url('src/assets/fonts/Poppins-Regular.ttf') format('truetype');
+  src: url('/fonts/Poppins-Regular.ttf') format('truetype');
 }
 @font-face{
   font-family: Novecento;
-  src: url('src/assets/fonts/Novecento-WideBold.ttf') format('truetype');
+  src: url('/fonts/Novecento-WideBold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: PoppinsThin;
-  src: url('src/assets/fonts/Poppins-Thin.ttf') format('truetype');
+  src: url('/fonts/Poppins-Thin.ttf') format('truetype');
 }
   
 
