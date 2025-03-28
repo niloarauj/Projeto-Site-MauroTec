@@ -7,10 +7,10 @@ function Footer(){
         <div className='footerContainer'>
             <div className='mainDivFooter'>
                 <div className="logoRedesSociais">
-                    <img src="src/assets/images/Logo1.png" alt="logo" className='logoMauroTec'/>
+                    <img src="/images/Logo1.png" alt="logo" className='logoMauroTec'/>
                     <div className="redesSociais">
-                        <a href="https://www.instagram.com/maurotec.informatica/" target="_blank" rel="noopener noreferrer"><img src="src/assets/images/instagramPNG.png" alt="instagramIcon" className='logoInstagram'/></a>
-                        <a href="https://api.whatsapp.com/send/?phone=5585986625606&text=Ol%C3%A1%2C+vim+atrav%C3%A9s+do+site.+Gostaria+de+fazer+um+or%C3%A7amento.&type=phone_number&a" target="_blank" rel="noopener noreferrer"><img src="src/assets/images/whatsappIcon.png" alt="whatsappIcon" className='logoWhatsApp' /></a>
+                        <a href="https://www.instagram.com/maurotec.informatica/" target="_blank" rel="noopener noreferrer"><img src="/images/instagramPNG.png" alt="instagramIcon" className='logoInstagram'/></a>
+                        <a href="https://api.whatsapp.com/send/?phone=5585986625606&text=Ol%C3%A1%2C+vim+atrav%C3%A9s+do+site.+Gostaria+de+fazer+um+or%C3%A7amento.&type=phone_number&a" target="_blank" rel="noopener noreferrer"><img src="/images/whatsappIcon.png" alt="whatsappIcon" className='logoWhatsApp' /></a>
                     </div>
                 </div>
                 

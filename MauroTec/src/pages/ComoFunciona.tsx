@@ -8,7 +8,7 @@ function ComoFunciona() {
       <div className="conteudoComoFunciona">
         <div className="coletaEntregaDiv">
           <img
-            src="src/assets/images/caminhão.png"
+            src="/images/caminhão.png"
             alt="caminhao"
             className="caminhao"
           />
@@ -30,7 +30,7 @@ function ComoFunciona() {
               <div className="numero">1</div>
               <div className="fotoImagem">
 
-                <img src="src/assets/images/iconediagnostico.png" alt=""  className='imagem-numero'/>
+                <img src="/images/iconediagnostico.png" alt=""  className='imagem-numero'/>
 
 
                 <p className='textoPasso'>Diagnóstico</p>
@@ -47,7 +47,7 @@ function ComoFunciona() {
 
             <div className="fotoImagem">
 
-              <img src="src/assets/images/iconeOrcamento.png" alt="" className='imagem-numero'/>
+              <img src="/images/iconeOrcamento.png" alt="" className='imagem-numero'/>
 
               <p className='textoPasso'>Orçamento</p>
 
@@ -63,7 +63,7 @@ function ComoFunciona() {
             <div className="numero">3</div>
             <div className="fotoImagem">
 
-              <img src="src\assets\images\iconeExecucao.png" alt=""  className='imagem-numero'/>
+              <img src="/images/iconeexecucao.png" alt=""  className='imagem-numero'/>
 
               <p className='textoPasso'>Execução</p>
 
@@ -78,7 +78,7 @@ function ComoFunciona() {
 
               <div className="fotoImagem">
 
-                <img src="src\assets\images\iconetestes.png" alt=""  className='imagem-numero'/>
+                <img src="/images/iconetestes.png" alt=""  className='imagem-numero'/>
         
 
                 <p className='textoPasso'>Testes</p>
@@ -93,7 +93,7 @@ function ComoFunciona() {
       </div>
 
       <div className="servicosExpressComoFunciona">
-        <img src="src/assets/images/ícone_Express.png" alt="iconeExpress" className="iconeExpress" />
+        <img src="/images/ícone_Express.png" alt="iconeExpress" className="iconeExpress" />
         
         <div className="centralExpress">
 

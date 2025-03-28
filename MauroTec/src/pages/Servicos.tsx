@@ -1,13 +1,16 @@
 import React from "react";
 import "./Servicos.css";
-import acessoriosTv from '../assets/images/imagensServicos/acessoriosTv.png';
-import manutencaoImpressora from '../assets/images/imagensServicos/manutencaoImpressora.jpg';
-import manutencaoComputadoresServicos from '../assets/images/imagensServicos/manutencaoServicos.jpg';
-import manutencaoTVs from '../assets/images/imagensServicos/manutencaoTVServicos.jpg';
-import performanceServicos from '../assets/images/imagensServicos/performanceServicos.jpg';
-import perifericosServicos from '../assets/images/imagensServicos/perifericosServicos.jpg';
-import reparosServicos from '../assets/images/imagensServicos/reparosServicos.jpg';
-import suprimentoImpressorasServicos from '../assets/images/imagensServicos/suprimentoImpressorasServicos.jpg';
+import acessoriosTv from '/images/imagensServicos/acessoriosTv.png';
+import manutencaoImpressora from '/images/imagensServicos/manutencaoImpressora.jpg';
+import manutencaoComputadoresServicos from '/images/imagensServicos/manutencaoServicos.jpg';
+import manutencaoTVs from '/images/imagensServicos/manutencaoTVServicos.jpg';
+import performanceServicos from '/images/imagensServicos/performanceServicos.jpg';
+import perifericosServicos from '/images/imagensServicos/perifericosServicos.jpg';
+import reparosServicos from '/images/imagensServicos/reparosServicos.jpg';
+import suprimentoImpressorasServicos from '/images/imagensServicos/suprimentoImpressorasServicos.jpg';
+
+
+
 
 const categories = [
   {

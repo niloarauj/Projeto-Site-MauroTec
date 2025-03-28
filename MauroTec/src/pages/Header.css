@@ -2,14 +2,14 @@
 .header {
     background: white;
     width: 100%;
-    min-height: 60px; /* Garante espaço suficiente */
+    min-height: 60px;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Centraliza os itens */
+    align-items: center;
     padding: 1rem;
     border-bottom: 4px solid #fc6404;
 }
@@ -19,27 +19,62 @@
     display: flex;
     background: none;
     border: none;
-    font-size: 32px; /* Aumenta o tamanho */
+    font-size: 32px;
     cursor: pointer;
     color: #fc6404;
-    padding: 10px; /* Garante que ele tenha espaço clicável */
-    z-index: 1100; /* Evita que seja coberto por outros elementos */
+    padding: 10px;
+    z-index: 1100;
 }
 
-/* Exibe o botão hambúrguer */
-.menu-button {
-    display: flex;
-    color: #fc6404;
-}
-
-/* Menu escondido por padrão */
+/* Estilização do menu */
 .nav-buttons {
     display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-top: 2px solid #fc6404;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+
+    /* NOVO: Evita cortes no menu */
+    max-height: calc(100vh - 60px);
+    overflow-y: auto; /* Permite rolagem se necessário */
 }
 
+/* Quando o menu está aberto */
+.nav-buttons.open {
+    display: block;
+}
+
+/* Estilização dos itens do menu no mobile */
+.nav-buttons ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
 .nav-button {
     font-family: 'Novecento';
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #fc6404;
+}
+
+.nav-button a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-weight: bold;
+}
+
+.nav-button:hover {
+    background: #fc6404;
+}
+
+.nav-button a:hover {
+    color: white;
 }
 
 a {
@@ -54,17 +89,8 @@ a:hover {
 .logo {
     width: auto;
     height: auto;
-    max-width: 80px; /* Ajuste conforme necessário */
+    max-width: 80px;
     object-fit: cover;
-}
-
-.nav-buttons ul {
-    list-style-type: none;
-    padding-right: 2rem;
-}
-
-.nav-buttons {
-    display: none;
 }
 
 .whatsapp-container {
@@ -103,7 +129,7 @@ a:hover {
     }
 }
 
-/* tabret */
+/* Tablet */
 @media (min-width: 768px) {
     .header {
         display: fixed;
@@ -116,7 +142,7 @@ a:hover {
     }
 }
 
-/* pc */
+/* PC */
 @media (min-width: 1200px) {
     .header {
         position: fixed;
@@ -126,14 +152,17 @@ a:hover {
     .logo {
         width: auto;
         height: auto;
-        max-width: 150px; /* Ajuste conforme necessário */
+        max-width: 150px;
         object-fit: contain;
         padding-left: 4rem;
         padding-top: 0.4rem;
     }
 
     .nav-buttons {
-        display: flex;
+        display: flex !important;
+        position: static;
+        background: transparent;
+        border: none;
         flex-grow: 1;
         justify-content: end;
         padding-right: 4rem;
@@ -144,6 +173,7 @@ a:hover {
         display: flex;
         margin: 0;
         padding: 0;
+        
         gap: 2rem;
     }
 
@@ -169,6 +199,10 @@ a:hover {
     .whatsapp-container {
         padding-right: 4rem;
         display: flex;
+        width: 20%;
+    }
+
+    .menu-button {
+        display: none;
     }
 }
-

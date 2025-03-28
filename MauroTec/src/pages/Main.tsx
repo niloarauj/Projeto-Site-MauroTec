@@ -20,13 +20,13 @@ function Main(){
                     </div>
                     <a href="https://wa.link/jmlqf0" target="_blank" rel="noopener noreferrer">
                         <div className='divWhatsInicio'>
-                            <button className='botaoWhatsInicio'> <img src="src/assets/images/whatsapp-icon.svg" alt="whatsapp"  className='iconWhatsappInicio'/>Solicite seu orçamento agora </button>
-                            <img src="src/assets/images/marcaPcNote.png" alt="marcasPcsNotebooks" className='marcasPcsNotebooks' />
+                            <button className='botaoWhatsInicio'> <img src="/images/whatsapp-icon.svg" alt="whatsapp"  className='iconWhatsappInicio'/>Solicite seu orçamento agora </button>
+                            <img src="/images/marcaPcNote.png" alt="marcasPcsNotebooks" className='marcasPcsNotebooks' />
                         </div>
                     </a>
 
                 </div>
-                <img src="MauroTec\public\images\equipamentosInicio.png" alt="Equipamentos" className ='imgEquipamentos'/>
+                <img src="/images/equipamentosInicio.png" alt="Equipamentos" className ='imgEquipamentos'/>
                 {/* <h2 className='tituloInicio'>Assistência técnica multimarcas em Fortaleza</h2> */}
                 
 
