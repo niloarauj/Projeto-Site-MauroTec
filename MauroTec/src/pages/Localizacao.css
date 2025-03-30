@@ -1,8 +1,7 @@
 /* Estilos gerais */
 .localizacaoMainDiv {
-    
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-inline: 1.5rem;
+
 }
 
 .textoLocalizacao {
@@ -38,7 +37,7 @@ iframe {
 }
 
 /* Estilos para desktops */
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .localizacaoMainDiv {
         margin: 0 auto;
     }

@@ -1,4 +1,8 @@
 /* Estilo base para dispositivos móveis */
+.avaliacoesMainDiv{
+    justify-content: center;
+    padding-inline: 1rem;
+}
 
 h1{
     justify-items: center;
@@ -30,7 +34,7 @@ h1{
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
 
     .avaliacoesMainDiv{
         justify-content: center;

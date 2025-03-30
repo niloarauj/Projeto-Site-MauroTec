@@ -39,6 +39,7 @@
   flex-direction: row;
   align-items: center;
   border-radius: 8px;
+  padding: 1rem;
   box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.5);
 }
 
@@ -61,18 +62,18 @@
 .passosContainer {
   display: flex;
   padding-bottom: 12rem;
-  flex-wrap: wrap;
   
 
 }
 
 .passo {
+
   flex: 1;
   justify-content: center;
   text-align: center;
   border-radius: 8px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .fotoImagem{
@@ -82,8 +83,8 @@
 
   border-radius: 8px;
   box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.5);
-  padding: 1rem;
-  transform: translateY(8rem);
+  padding: 3rem;
+  /* transform: translateY(8rem); */ 
 
 }
 
@@ -100,15 +101,10 @@
   color: #666;
 }
 
-
-
-
-
 .numero {
-  font-size: 10vw;
+  font-size: 15vh;
   font-weight: bold;
   color: #e4e4e4;
-  
 
 }
 
@@ -121,8 +117,9 @@
 
 .servicosExpressComoFunciona{
   display: flex;
-  flex-direction:  row;
-  align-items: flex-start;
+  
+  flex-direction:  column;
+  align-items: center;
   border-radius: 8px;
   box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.5);
   padding: 1rem;
@@ -133,23 +130,25 @@
   display: flex;
   flex-direction: column;
 
-  
 }
+
 h1{
   justify-items: center;
-    display: flex
-;
+    display: flex;
     width: 100%;
     align-items: center;
     padding-inline: 0;
     padding-bottom: 10px;
-}
-.iconeExpress{
-  width: 80px;
-  height: auto;
-  object-fit: contain;
 
 }
+.iconeExpress{
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  padding-bottom: 2rem;
+
+}
+
 .textoExpress, .descricaoTextoExpress, .diasUteisExpress, .excecaoExpress,
 .atencaoExpress, .tipoAceito{
   font-size: 1.1rem;
@@ -163,24 +162,99 @@ h1{
 
 .diasUteisExpress, .textoExpress{
   color: #fc6404;
+
 }
+
 .diasUteisExpress{
   padding-top: 1rem;
+
 }
 
 .atencaoExpress{
   padding-top: 1rem;
+
 }
 
 .tipoAceito{
   text-align: center;
   padding-top: 2rem;  
   padding-bottom: 2rem;
+
 }
 
-@media (max-width: 768px) {
-.passosContainer {
-  flex-direction: column;
-  align-items: center;
+/* tabret */
+@media (min-width: 768px) {
+
+  .passosContainer{
+    flex-direction: column;
+  }
+
+
+  .numero {
+    font-size: 15vw;
+
+  }
+
+  .fotoImagem{
+
+    padding: 5rem;
+  }
+
+
 }
+
+
+/* pc */
+@media (min-width: 1200px) {
+
+  .passosContainer{
+    flex-direction: row;
+    /* flex-wrap: wrap;
+    gap: 4rem;
+   */
+
+
+  }
+
+  .passo {
+    /* flex: 1 1 calc(50% - 2rem); Mantém 2 por linha */
+    /* padding-top: 3rem; */
+    flex-direction: row;
+
+  }
+
+  .fotoImagem{
+
+    padding: 1rem;
+    transform: translateY(8rem);
+  
+  }
+
+  .numero {
+    font-size: 10vw;
+    font-weight: bold;
+    color: #e4e4e4;
+  
+  }
+
+  .servicosExpressComoFunciona{
+    flex-direction:  row;
+    align-items: flex-start;
+    
+  
+  }
+  
+  .iconeExpress{
+    width: 80px;
+  
+  }
+}
+
+
+@media (max-width: 375px) {
+  .fotoImagem{
+
+    padding: 0;
+  
+  }
 }

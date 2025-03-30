@@ -22,6 +22,7 @@ body, html {
   font-family: 'Novecento';
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   overflow-x: hidden; /* Evita rolagem horizontal */
   scroll-behavior: smooth;
 }
@@ -39,7 +40,10 @@ body, html {
 .container {
   display: flex;
   flex-direction: column;
-  
+  gap:3rem;
+  box-sizing: border-box;
+  max-width: 100%; /* Garante que o flex container não fique maior que a tela */
+
 }
 
 @media (min-width: 768px) {

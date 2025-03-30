@@ -3,7 +3,7 @@ import './Consultoria.css'
 function Consultoria(){
     return(
         <div className="consultoriaMainDiv">
-            <h1>Consultoria para montagem de computador gamer</h1>
+            <p className='tituloConsultoria'>Consultoria para montagem de computador gamer</p>
             <p className='subtituloConsultoria'>A MauroTEC oferece consultoria para a montagem de computadores<br></br> gamers. Ajudamos você a montar seu equipamento, da escolha das peças<br></br> até a montagem para garantir desempenho e custo-benefício.</p>
             <div className="conteudoConsultoria">
             <img src="/images/setup gamer.png" alt="SetupGamer" className='setupGamerConsultoria'/>

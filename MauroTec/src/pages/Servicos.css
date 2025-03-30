@@ -9,7 +9,7 @@
   background-color: #747474;
   color: white;
   display: flex;
-  width: 45%;
+  width: 60%;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
@@ -97,13 +97,19 @@
   }
 }
 
-/* 🖥️ Desktop (mínimo 1024px) */
-@media (min-width: 1024px) {
+/* 🖥️ Desktop (mínimo 1200px) */
+@media (min-width: 1200px) {
   .category-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
+  }
+
+  .retangulo-servicos{
+
+    width: 40%;
+
   }
 
   .item-box {

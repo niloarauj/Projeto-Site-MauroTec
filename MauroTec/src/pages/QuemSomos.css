@@ -17,6 +17,8 @@ h1{
 .quemSomos{
     justify-content: flex-start;
     padding-top: 2rem;
+    padding-inline: 2rem;
+    box-sizing: border-box;
     
     
 }
@@ -24,6 +26,8 @@ h1{
 .conteudoQuemSomos{
     flex-direction: column;
     justify-items: center;
+    box-sizing: border-box;
+
 
 }
 
