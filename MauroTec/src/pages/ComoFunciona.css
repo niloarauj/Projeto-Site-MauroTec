@@ -250,7 +250,7 @@ h1{
 @media (max-width: 375px) {
   .fotoImagem{
 
-    padding: 0;
+    padding: 1rem;
   
   }
 }
