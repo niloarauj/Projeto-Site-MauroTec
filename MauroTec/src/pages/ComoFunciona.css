@@ -1,5 +1,5 @@
 .comoFuncionaMainDiv {
-  padding-inline: 4rem;
+  padding-inline: 2rem;
   font-weight: bold;
 }
 
@@ -62,6 +62,7 @@
 .passosContainer {
   display: flex;
   padding-bottom: 12rem;
+  flex-wrap: wrap;
   
 
 }
@@ -84,7 +85,6 @@
   border-radius: 8px;
   box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.5);
   padding: 3rem;
-  /* transform: translateY(8rem); */ 
 
 }
 
@@ -209,16 +209,12 @@ h1{
 
   .passosContainer{
     flex-direction: row;
-    /* flex-wrap: wrap;
-    gap: 4rem;
-   */
 
 
   }
 
   .passo {
-    /* flex: 1 1 calc(50% - 2rem); Mantém 2 por linha */
-    /* padding-top: 3rem; */
+
     flex-direction: row;
 
   }
