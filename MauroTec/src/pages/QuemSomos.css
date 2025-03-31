@@ -15,8 +15,12 @@ h1{
 }
 
 .quemSomos{
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center !important;
     justify-content: center;
+
     padding-top: 2rem;
     padding-inline: 2rem;
     box-sizing: border-box;
