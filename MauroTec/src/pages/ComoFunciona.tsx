@@ -27,10 +27,13 @@ function ComoFunciona() {
 
 
 
-              <div className="numero">1</div>
+              <div className="numeroPC">1</div>
               <div className="fotoImagem">
-
-                <img src="/images/iconediagnostico.png" alt=""  className='imagem-numero'/>
+                <div className="imagemnumero">
+                  <div className="numeroCelular">1</div>
+                  <img src="/images/iconediagnostico.png" alt=""  className='imagem-numero'/>
+                </div>
+                
 
 
                 <p className='textoPasso'>Diagnóstico</p>
@@ -43,11 +46,14 @@ function ComoFunciona() {
 
           <div className="passo">
 
-            <div className="numero">2</div>
+            <div className="numeroPC">2</div>
 
             <div className="fotoImagem">
-
-              <img src="/images/iconeOrcamento.png" alt="" className='imagem-numero'/>
+              <div className='imagemnumero'>
+                <div className='numeroCelular'>2</div>
+                <img src="/images/iconeOrcamento.png" alt="" className='imagem-numero'/>
+              </div>
+              
 
               <p className='textoPasso'>Orçamento</p>
 
@@ -60,10 +66,13 @@ function ComoFunciona() {
           <div className="passo">
 
 
-            <div className="numero">3</div>
+            <div className="numeroPC">3</div>
             <div className="fotoImagem">
-
-              <img src="/images/iconeexecucao.png" alt=""  className='imagem-numero'/>
+              <div className="imagemnumero">
+                <div className="numeroCelular">3</div>
+                <img src="/images/iconeexecucao.png" alt=""  className='imagem-numero'/>
+              </div>
+              
 
               <p className='textoPasso'>Execução</p>
 
@@ -74,12 +83,14 @@ function ComoFunciona() {
 
           <div className="passo">
 
-            <div className="numero">4</div>
+            <div className="numeroPC">4</div>
 
               <div className="fotoImagem">
-
-                <img src="/images/iconetestes.png" alt=""  className='imagem-numero'/>
-        
+                <div className="imagemnumero">
+                  <div className="numeroCelular">4</div>
+                  <img src="/images/iconetestes.png" alt=""  className='imagem-numero'/>
+                </div>
+                
 
                 <p className='textoPasso'>Testes</p>
 
@@ -89,9 +100,8 @@ function ComoFunciona() {
 
           </div>
         </div>
-
       </div>
-
+      <h1>PRAZOS</h1>
       <div className="servicosExpressComoFunciona">
         <img src="/images/ícone_Express.png" alt="iconeExpress" className="iconeExpress" />
         

@@ -11,12 +11,12 @@ function Header() {
       {/* Menu de navegação */}
       <nav className={`nav-buttons ${menuOpen ? "open" : ""}`}>
         <ul>
-          <li className="nav-button"><a href="#main-section">Início</a></li>
-          <li className="nav-button"><a href="#servicos-section">Serviços</a></li>
-          <li className="nav-button"><a href="#avaliacoes-section">Avaliações</a></li>
-          <li className="nav-button"><a href="#localizacao-section">Localização</a></li>
-          <li className="nav-button"><a href="#quemsomos-section">Quem Somos</a></li>
-          <li className="nav-button"><a href="#blog-section">Blog</a></li>
+          <li className="nav-button"><a href="#main-section" onClick={() => setMenuOpen(false)}>Início</a></li>
+          <li className="nav-button"><a href="#servicos-section" onClick={() => setMenuOpen(false)}>Serviços</a></li>
+          <li className="nav-button"><a href="#avaliacoes-section" onClick={() => setMenuOpen(false)}>Avaliações</a></li>
+          <li className="nav-button"><a href="#localizacao-section" onClick={() => setMenuOpen(false)}>Localização</a></li>
+          <li className="nav-button"><a href="#quemsomos-section" onClick={() => setMenuOpen(false)}>Quem Somos</a></li>
+          <li className="nav-button"><a href="#blog-section" onClick={() => setMenuOpen(false)}>Blog</a></li>
         </ul>
       </nav>
 

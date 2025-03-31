@@ -21,6 +21,8 @@ h1{
 
 .tituloAvaliacoes, .textoAvaliacoes {
     margin: 0;
+    text-align:center;
+    
 }
 
 @media (min-width: 768px) {
@@ -50,6 +52,9 @@ h1{
 
     .tituloAvaliacoes {
         font-size: 1.7rem;
-        
     }
+    .textoAvaliacoes{
+        padding-inline: 12rem;
+    }
+
 }
