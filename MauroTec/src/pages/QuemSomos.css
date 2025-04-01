@@ -17,8 +17,8 @@ h1{
 .quemSomos{
     display: flex;
     flex-direction: column;
-    
-    align-items: center !important;
+
+    align-items: center;
     justify-content: center;
 
     padding-top: 2rem;
@@ -29,8 +29,9 @@ h1{
 }
 
 .conteudoQuemSomos{
+    display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     box-sizing: border-box;
 
 
@@ -50,7 +51,7 @@ h1{
     width: 50%;
     height: auto;
     display: flex;
-    box-shadow: 1rcap;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     justify-content: center;
     
     order: 1;
@@ -72,7 +73,7 @@ h1{
         width: 50%;
         height: auto;
         display: flex;
-        box-shadow: 1rcap;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
         justify-content: center;
         order: 1;
         align-self: center;
@@ -110,7 +111,7 @@ h1{
         align-items: center;
         justify-content: center;
         display: flex;
-        font-weight: 5rem;
+        font-weight: 600;
         font-size: 1.4rem;
         margin: 0;
         padding-bottom: 0.8rem;
