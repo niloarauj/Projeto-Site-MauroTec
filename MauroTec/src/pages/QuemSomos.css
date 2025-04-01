@@ -54,7 +54,7 @@ h1{
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     justify-content: center;
     
-    order: 1;
+    order: 0;
     align-self: center;
     border-radius: 0.2rem;
 }
