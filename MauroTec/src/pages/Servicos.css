@@ -3,7 +3,7 @@
   font-weight: bold;
   text-align: center;
   padding: 20px ;
-  font-size: 2rem;
+  font-size: 1.5rem;
   justify-content: center;
 }
 .retangulo-servicos{
@@ -100,6 +100,11 @@
 
 /* 🖥️ Desktop (mínimo 1200px) */
 @media (min-width: 1200px) {
+  .tituloPrincipal {
+    font-size: 2rem;
+
+  }
+
   .category-items {
     display: flex;
     flex-wrap: wrap;
