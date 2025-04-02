@@ -33,6 +33,7 @@
 
 .fontDiagnosticos{
   font-family: PoppinsThin;
+  white-space: normal; 
 }
 
 .coletaEntregaDiv {
@@ -234,6 +235,12 @@ h1{
 
 /* pc */
 @media (min-width: 1200px) {
+
+  .fontDiagnosticos{
+    white-space: pre-line; 
+    }
+  
+
 
   .passosContainer{
     flex-direction: row;
