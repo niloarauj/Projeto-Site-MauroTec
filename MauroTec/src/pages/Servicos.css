@@ -1,9 +1,10 @@
-.titulo {
+.tituloPrincipal {
   color: #fc6404;
   font-weight: bold;
   text-align: center;
   padding: 20px ;
-  font-size: 0.8rem;
+  font-size: 2rem;
+  justify-content: center;
 }
 .retangulo-servicos{
   background-color: #747474;

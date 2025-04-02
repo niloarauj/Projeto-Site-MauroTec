@@ -43,8 +43,11 @@ const categories = [
 
 const Servicos: React.FC = () => {
   return (
-    <div className="titulo">
-      <h1>TUDO O QUE VOCÊ PRECISA EM ASSISTÊNCIA DE INFORMÁTICA</h1>
+
+
+    <div className="mainDiv">
+      <p className="tituloPrincipal">TUDO O QUE VOCÊ PRECISA EM ASSISTÊNCIA DE INFORMÁTICA</p>
+
     
       <div className="catalog-grid">
         {/* NOTEBOOKS E COMPUTADORES */}

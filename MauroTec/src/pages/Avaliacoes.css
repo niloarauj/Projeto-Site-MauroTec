@@ -42,19 +42,23 @@ h1{
         justify-content: center;
     }
 
-    .textosAvaliacoes {
-        font-size: 1.7rem; 
-    }
+
 
     h1{
         padding-left: 0;
     }
 
-    .tituloAvaliacoes {
-        font-size: 1.7rem;
+    .tituloAvaliacoes, .textosAvaliacoes {
+        font-size: 1.2rem; 
+    
     }
+
+
+
     .textoAvaliacoes{
         padding-inline: 12rem;
     }
+
+
 
 }

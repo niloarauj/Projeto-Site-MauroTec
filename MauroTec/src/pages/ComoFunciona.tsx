@@ -3,7 +3,7 @@ import './ComoFunciona.css';
 function ComoFunciona() {
   return (
     <div className="comoFuncionaMainDiv">
-      <h1>Como Funciona</h1>
+      <p className='titulo'>Como Funciona</p>
       
       <div className="conteudoComoFunciona">
         <div className="coletaEntregaDiv">
@@ -101,7 +101,7 @@ function ComoFunciona() {
           </div>
         </div>
       </div>
-      <h1>PRAZOS</h1>
+      <p className = 'tituloPrazos'>PRAZOS</p>
       <div className="servicosExpressComoFunciona">
         <img src="/images/ícone_Express.png" alt="iconeExpress" className="iconeExpress" />
         

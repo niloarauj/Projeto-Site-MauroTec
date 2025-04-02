@@ -142,6 +142,13 @@
 
 }
 
+.titulo{
+  color: #fc6404;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+}
+
 h1{
   justify-items: center;
     display: flex;
@@ -175,14 +182,12 @@ h1{
 
 }
 
-.titulo-prazos{
+.tituloPrazos{
   color: #fc6404;
-  justify-items: center;
+  justify-content: center;
   display: flex;
-  width: 100%;
   align-items: center;
-  padding-inline: 0;
-  padding-bottom: 10px;
+  font-size: 2rem;
 }
 
 .diasUteisExpress{

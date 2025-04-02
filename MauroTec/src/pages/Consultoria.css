@@ -72,16 +72,17 @@ h1{
     .tituloConsultoria{
 
         font-size: 2rem;
+        margin: 10px;
 
     }
 
 
     .subtituloConsultoria{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         padding-inline: 12rem;
         text-align: center;
-        font-size: 1rem;
         margin: 0;
+        padding-bottom: 2rem;
     }
     
     .descricaoConsultoria{

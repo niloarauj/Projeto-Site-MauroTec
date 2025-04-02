@@ -3,7 +3,7 @@ import './Localizacao.css'
 function Localizacao(){
     return(
         <div className="localizacaoMainDiv">
-            <h1>Localização</h1>
+            <p className='titulo'>Localização</p>
             <p className="textoLocalizacao">Estamos bem localizados no Bonsucesso, na Rua André Rebouças, número 110.<br></br>
             (próximo ao Center Box do João XXIII, Avenida Perimetral e a 10 minutos do North Shopping Jóquei)</p>
             <div className='mapaLoc'>
