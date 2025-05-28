@@ -9,7 +9,7 @@ function Main(){
 
                     <p className='tituloInicio'>Assistência técnica multimarcas em Fortaleza</p>
                     <p className='subtituloInicio'>MANTENHA SEU EQUIPAMENTO <br/> FUNCIONANDO SEMPRE: CONSERTO E <br/>MANUTENÇÃO EXPRESS</p>
-                    <p className='descricaoInicio'>A maneira mais rápida, segura e eficiente de ter seu <br/>equipamento funcionando novamente.</p>
+                    <p className='descricaoInicio'>A maneira mais rápida, segura e eficiente de ter <br/>seu equipamento funcionando novamente.</p>
                     
                     
                     <div className='retangulos-eletronicos'>
